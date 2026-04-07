@@ -27,7 +27,7 @@ GoldCashFreeSpins is an automated UI test project using TestNG to run tests in p
 
 ## Running tests with Maven
 Since the project uses Maven, run the suite with:
-mvn clean install 
+mvn clean install then 
 mvn test -Dsurefire.suiteXmlFiles=testng.xml
 
 ## Troubleshooting
