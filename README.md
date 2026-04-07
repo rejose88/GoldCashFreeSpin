@@ -36,11 +36,11 @@ mvn test -Dsurefire.suiteXmlFiles=testng.xml
 - Inspect Eclipse Console and TestNG reports for stack traces and root causes.
 
 ## Design Decisions
-• TestNG was integrated with a data‑driven framework to support parameterized test execution
-• Adopted the Page Object Model for organizing page elements and actions.
-•	Used Page Factory (Enhanced Encapsulation) by using @FindBy annotations to declare elements as private members.
-•	Configured testng.xml to control execution and parallelism so configuration is external to code and easy to change per-run.
-•	Exposed browser as a suite parameter to switch browsers without modifying test code or recompiling.
-•	Registered reportgeneration.Listners as a listener to centralize reporting, logging and lifecycle hooks in one place.
-•	Keeping test inclusions and method-level includes commented for quick, targeted runs during debugging or CI troubleshooting.
-• Implemented Maven for project build and management
+- TestNG was integrated with a data‑driven framework to support parameterized test execution
+- Adopted the Page Object Model for organizing page elements and actions.
+- Used Page Factory (Enhanced Encapsulation) by using @FindBy annotations to declare elements as private members.
+- Configured testng.xml to control execution and parallelism so configuration is external to code and easy to change per-run.
+- Exposed browser as a suite parameter to switch browsers without modifying test code or recompiling.
+- Registered reportgeneration.Listners as a listener to centralize reporting, logging and lifecycle hooks in one place.
+- Keeping test inclusions and method-level includes commented for quick, targeted runs during debugging or CI troubleshooting.
+- Implemented Maven for project build and management
